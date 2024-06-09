@@ -1,10 +1,12 @@
 # Lightbase
 
-Lightbase is an API to simplify operations with databases. Lightbase is built to be:
+Lightbase is an abstract, low-cost database library built on peer-to-peer networks. To simplify operations with databases, Lightbase is built to be:
 
 + **Affordable**: as low-cost as possible leveraging peer-to-peer databases.
 + **Frictionless**: fast and easy for developers to use. Built on REST API (minimal dependencies required) and HTTP-inspired calls.
 + **Unique**: unique items that can be accessed across different databases.
+
+Lightbase is currently built on [IPFS](https://ipfs.tech).
 
 Feel free to create an issue for feature requests.
 
