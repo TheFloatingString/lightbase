@@ -1,0 +1,39 @@
+<html>
+<head>
+	<script src="https://cdn.tailwindcss.com"></script>
+	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+	<style>
+		body {
+			padding: 10px;
+		}
+	</style>
+	<script>
+		console.log('Welcome to Lightbase.');
+		const rs = document.getElementById('renderSpace');
+		const _ = axios.get("http://127.0.0.1:8000/read_all").then(
+					function(data) {
+
+			for (let i=0; i<data.data.data.length, i++) {
+								document.getElementById('renderSpace').innerHTML += `<p>${data.data.data[i]}</p>`
+					}		
+					});
+	</script>
+</head>
+<body>
+	<h3 class="text-3xl font-bold">Lightbase.</h3>
+	<p>Lightbase is a P2P database library, which is:
+	<ul>
+		<li><b>Affordable.</b> Free as long as possible.</li>
+		<li><b>Frictionless.</b> Fast and easy for developers to use. Built on REST API (minimal depencencies require) and HTTP-inspired commands.</li>
+		<li><b>Uniqueness-first.</b> Creates unique items that can be accessed across different databases.</li>
+	</ul>
+	<p>Future features include:
+	<ul>
+		<li>Better item retrieval visibility for users and developers (ie keeping track of hashes)</li>
+		<li>Interoperability between different P2P databases</li>
+	</ul>
+	</p>
+	<div id='renderSpace'>
+	</div>
+</body>
+</html>
