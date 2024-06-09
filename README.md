@@ -1,8 +1,16 @@
 # Lightbase
 
+Lightbase is an API to simplify operations with databases. Lightbase is built to be:
+
++ **Affordable**: as low-cost as possible leveraging peer-to-peer databases.
++ **Frictionless**: fast and easy for developers to use. Built on REST API (minimal dependencies required) and HTTP-inspired calls.
++ **Unique**: unique items that can be accessed across different databases.
+
+Feel free to create an issue for feature requests.
+
 ### Running IPFS
 
-Installing `ipfs` on Linux:
+Installing `ipfs` on Linux for [terminal](https://docs.ipfs.tech/install/command-line/):
 
 ```bash
 wget https://dist.ipfs.tech/kubo/v0.28.0/kubo_v0.28.0_linux-amd64.tar.gz
@@ -38,5 +46,5 @@ Write:
 curl -XPOST localhost:8000/create -H "Content-Type: application/json" -d "{\"data\":\"<Attachment string>\"}"
 ```
 
-Web app view at `localhost:8000/view`.
+Web app view at [localhost:8000/view](localhost:8000/view).
 
