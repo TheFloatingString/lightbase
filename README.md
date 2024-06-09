@@ -26,3 +26,17 @@ pip install -r requirements.txt
 fastapi dev main.py
 ```
 
+Read:
+
+```bash
+curl -XGET localhost:8000/read/<ipfs_hash>
+```
+
+Write:
+
+```bash
+curl -XPOST localhost:8000/create -H "Content-Type: application/json" -d "{\"data\":\"<Attachment string>\"}"
+```
+
+Web app view at `localhost:8000/view`.
+
