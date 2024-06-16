@@ -1,5 +1,7 @@
 # Lightbase
 
+![img](https://raw.githubusercontent.com/TheFloatingString/lightbase/main/static/img/Lightbase%20Cover.png)
+
 Lightbase is an abstract, low-cost database library built on peer-to-peer networks. To simplify operations with databases, Lightbase is built to be:
 
 + **Affordable**: as low-cost as possible leveraging peer-to-peer databases.
